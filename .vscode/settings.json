@@ -1,0 +1,199 @@
+{
+	"workbench.colorTheme": "Default Dark Modern",
+	"workbench.colorCustomizations": {
+		"editor.background": "#1E1E1E",
+		"activityBar.background": "#333333",
+		"editor.foreground": "#eeeeee",
+		"editor.lineHighlightBackground": "#2F2F2F",
+		"editor.selectionBackground": "#264F78",
+		"titleBar.activeBackground": "#000000",
+		"statusBar.background": "#1b1b1b",
+		"statusBar.foreground": "#ffffff",
+		"terminal.background": "#1f1f1f",
+		"terminal.foreground": "#eeeeee",
+		// 주메뉴(메인 메뉴바) 색상 설정
+		"titleBar.activeForeground": "#aaaaaa",
+		"titleBar.inactiveForeground": "#cccccc",
+		"titleBar.inactiveBackground": "#1a1a1a",
+		// 메뉴바 색상 설정
+		"menubar.selectionForeground": "#ffffff",
+		"menubar.selectionBackground": "#444444",
+		"menu.foreground": "#eeeeee",
+		"menu.background": "#252526",
+		"menu.selectionForeground": "#ffffff",
+		"menu.selectionBackground": "#444444",
+		"menu.separatorBackground": "#454545",
+		// 드롭다운 메뉴 색상 설정
+		"dropdown.background": "#252526",
+		"dropdown.foreground": "#cccccc",
+		// 사이드바 메뉴 색상 설정
+		"sideBar.background": "#1c1c1c",
+		"sideBar.foreground": "#cccccc",
+		"sideBarTitle.foreground": "#ffffff",
+		"sideBarSectionHeader.foreground": "#cccccc",
+		"sideBarSectionHeader.background": "#333333",
+		"sideBar.border": "#333333",
+		"editorWarning.foreground": "#FFD700",
+		"problemsWarningIcon.foreground": "#FFD700",
+		"list.warningForeground": "#FFD700"
+	},
+	"editor.semanticHighlighting.enabled": false,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "constant.language.boolean.false.js, constant.language.null.ts, constant.language.null.tsx, constant.language.null.js, constant.language.undefined.js, constant.language.boolean.false.ts",
+				"settings": {
+					"foreground": "#df4545"
+				}
+			},
+			{
+				"scope": "entity.name.type.module.js",
+				"settings": {
+					"foreground": "#e16aff"
+				}
+			},
+			{
+				"scope": "keyword.control, entity.name.tag, entity.other.attribute-name.class.css, storage.modifier, entity.name.tag.css, entity.other.attribute-name.pseudo-class.css, storage.type.function.js, support.variable.js, support.variable.property, support.function.tsx, support.function.js, entity.name.function.member, punctuation.decorator.ts, meta.property-name.css",
+				"settings": {
+					"foreground": "#ff77bb"
+				}
+			},
+			{
+				"scope": "support.type, keyword.operator.expression.void.tsx, keyword, support.type.primitive.tsx",
+				"settings": {
+					"foreground": "#ff32ff"
+				}
+			},
+			{
+				"scope": "string.quoted.double.json, ",
+				"settings": {
+					"foreground": "#eea380"
+				}
+			},
+			{
+				"scope": "variable.other.constant.object, variable.other.constant, variable.other.readwrite.js",
+				"settings": {
+					"foreground": "#ff8c3f"
+				}
+			},
+			{
+				"scope": "entity.name.function, support.constant.property-value, function.declaratio",
+				"settings": {
+					"foreground": "#ffe23d"
+				}
+			},
+			{
+				"scope": "support.constant.property-value.css, variable.other.readwrite.alias.tsx, variable.other.object.tsx",
+				"settings": {
+					"foreground": "#ffd900"
+				}
+			},
+			{
+				"scope": "constant.numeric, constant.language.boolean.true.js, storage.type",
+				"settings": {
+					"foreground": "#55c1ff"
+				}
+			},
+			{
+				"scope": "support.function.js, support.class, entity.name.type",
+				"settings": {
+					"foreground": "#4EC9B0"
+				}
+			},
+			{
+				"scope": "keyword.other.unit.px.css, entity.other.attribute-name.pseudo-element.css",
+				"settings": {
+					"foreground": "#32cd32"
+				}
+			},
+			{
+				"scope": "entity.other.attribute-name",
+				"settings": {
+					"foreground": "#3cff00"
+				}
+			},
+			{
+				"scope": "string.template.js",
+				"settings": {
+					"foreground": "#4cb466"
+				}
+			},
+			{
+				"scope": "support.type.property-name.json, support.type.property-name.cssm, variable.other.property.js, variable.parameter, variable.other.object.property.js, variable.other.property.tsx, variable, text.html.derivative, meta.property-list.css, source.css, support.variable, meta.tag",
+				"settings": {
+					"foreground": "#fff"
+				}
+			},
+			{
+				"scope": "variable.other.readwrite",
+				"settings": {
+					"foreground": "#eee"
+				}
+			},
+			{
+				"scope": "source.tsx",
+				"settings": {
+					"foreground": "#ddd"
+				}
+			},
+			{
+				"scope": "string.quoted",
+				"settings": {
+					"foreground": "#ccc"
+				}
+			},
+			{
+				"scope": "support.type.vendored.property-name.css, variable.scss, source.css.scss, string, string.quoted.double.html, text.pug",
+				"settings": {
+					"foreground": "#bbb"
+				}
+			},
+			{
+				"scope": "string",
+				"settings": {
+					"foreground": "#aaa"
+				}
+			},
+			{
+				"scope": "comment, storage.type.class.jsdoc, string.quoted.docstring.multi.python",
+				"settings": {
+					"foreground": "#777"
+				}
+			}
+		]
+	},
+	"search.exclude": {
+		"**/.yarn": true,
+		"**/.pnp.*": true
+	},
+	"eslint.nodePath": ".yarn/sdks",
+	"prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
+	"typescript.tsdk": ".yarn/sdks/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.suggest.enabled": true,
+	"typescript.validate.enable": true,
+	"eslint.run": "onType",
+	"problems.decorations.enabled": true,
+	"editor.showUnused": true,
+	"eslint.enable": true,
+	"eslint.probe": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"eslint.rules.customizations": [
+		{
+			"rule": "@typescript-eslint/no-unused-vars",
+			"severity": "downgrade"
+		}
+	],
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	// "eslint.workingDirectories": [{ "mode": "auto" }]
+}

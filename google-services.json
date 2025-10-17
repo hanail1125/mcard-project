@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "603124249294",
+    "project_id": "mcard-app-f0eb9",
+    "storage_bucket": "mcard-app-f0eb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603124249294:android:63e09e41c52d614a7d969f",
+        "android_client_info": {
+          "package_name": "com.mcardapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm2kE6lLh22GP7r4med8PIxtJ7NVrywpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+gs://mcard-app-f0eb9.firebasestorage.app

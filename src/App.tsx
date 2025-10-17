@@ -1,25 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ScrollToTop from '@components/shared/ScrollToTop';
+import PrivateRoute from '@components/auth/PrivateRoute';
+import Navbar from '@components/shared/Navbar';
+import HomePage from '@pages/Home';
+import TestPage from '@pages/Test';
+import CardPage from '@pages/Card';
+import SigninPage from '@pages/Signin';
+import SignupPage from '@pages/Signup';
+import ApplyPage from '@pages/Apply';
+import ApplyDone from '@/pages/ApplyDone';
+import { Suspense } from 'react';
+import MyPage from '@/pages/My';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" Component={HomePage} />
+        <Route path="/test" Component={TestPage} />
+        <Route path="/signin" Component={SigninPage} />
+        <Route path="/signup" Component={SignupPage} />
+        <Route
+          path="/apply/:id"
+          element={
+            <PrivateRoute>
+              <ApplyPage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/apply/done"
+          element={
+            <PrivateRoute>
+              <Suspense fallback={<>로딩중입니다...</>}>
+                <ApplyDone />
+              </Suspense>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/my"
+          element={
+            <PrivateRoute>
+              <MyPage />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/card/:id" Component={CardPage} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
