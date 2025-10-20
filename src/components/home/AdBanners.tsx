@@ -33,7 +33,7 @@ const AdBanners = () => {
         loop={true}
         slidesPerView={1}
       >
-        {data?.map((banner, idx) => {
+        {data?.map((banner) => {
           return (
             <SwiperSlide key={banner.id}>
               <Link to={banner.link}>
